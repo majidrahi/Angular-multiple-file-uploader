@@ -1,0 +1,31 @@
+.c-uploader {
+    width: 50%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 5px 5px #CCC;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.c-uploader #file {
+    display: none;
+}
+
+.c-progress {
+    width: 100%;
+    height: 1.3rem;
+    position: relative;
+    margin-top: 2rem;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.c-progress>div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: blueviolet;
+    transition: 0.3s;
+    text-align: center;
+    color: #FFF;
+}

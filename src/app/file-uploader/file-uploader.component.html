@@ -1,0 +1,18 @@
+<div class="c-uploader">
+    <h3>File Uploader With Progress</h3>
+    <div>
+        <input type="file" #file placeholder="Choose file" (change)="uploadFile($event)" multiple>
+        <button type="button" (click)="file.click()">Upload File</button>
+    </div>
+    <div>
+        <div *ngIf="progress > 0" class="c-progress">
+            <div [style.width]="progress+'%'">
+                {{progress}}%
+            </div>
+        </div>
+        <br>
+        <span class="upload" *ngIf="message">
+            {{message}}
+        </span>
+    </div>
+</div>
